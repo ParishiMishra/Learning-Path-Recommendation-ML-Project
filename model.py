@@ -2,6 +2,7 @@ import tensorflow as tf
 from tensorflow import keras
 from keras import Sequential
 from keras import Dense, InputLayer
+from syndata import *
 
 X = df[['quiz_scores', 'assignment_completion', 'time_spent_on_tasks', 'frequency_of_interactions', 'emotional_state']].values
 y = df['average_performance'].values
